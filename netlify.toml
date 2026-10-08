@@ -1,0 +1,15 @@
+[build]
+  # Tell Netlify to enter the client directory before building
+  base = "client"
+  
+  # Build command to execute inside client/
+  command = "npm run build"
+  
+  # Folder containing generated static files (use "dist" for Vite, "build" for CRA)
+  publish = "dist"
+
+# Directs all routes (e.g. /dashboard, /login) to index.html for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

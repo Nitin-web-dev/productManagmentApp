@@ -11,7 +11,7 @@ Analytics & Reporting: Dynamic dashboards featuring Burndown, Burnup, Velocity, 
 Enterprise Control: Role-Based Access Control (RBAC), real-time Socket.IO notifications, global full-text search, and automated AI story estimation.
 
 ###🛠️ Production Tech Stack
-Frontend: React, TypeScript, Tailwind CSS, TanStack Query, Zustand, DnD Kit
+Frontend: React, javascript, Tailwind CSS, TanStack Query, Zustand, DnD Kit
 
 Backend & DB: Node.js, Express, PostgreSQL, Prisma ORM, JWT + Refresh Tokens
 
