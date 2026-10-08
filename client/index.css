@@ -1,0 +1,22 @@
+:root {
+  --bg: #F4F6F5; --panel: #ffffff; --side: #12302C; --side-ink: #B9CCC8;
+  --ink: #17211F; --mute: #66736F; --line: #DCE3E0;
+  --ac: #0F766E; --ac-ink: #ffffff; --soft: #DDF1EE; --bad: #C2410C;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0D1514; --panel: #14201E; --side: #0A100F; --side-ink: #B9CCC8;
+    --ink: #E5EEEC; --mute: #8FA19D; --line: #25352F;
+    --ac: #2DD4BF; --ac-ink: #08201C; --soft: #16403B; --bad: #FB923C;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: "Instrument Sans", system-ui, sans-serif;
+}
+
+:focus-visible { outline: 2px solid var(--ac); outline-offset: 2px; }
