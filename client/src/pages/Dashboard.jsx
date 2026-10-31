@@ -1,7 +1,12 @@
+import StateCard from "../components/dashboard/StateCard"
 export default function Dashboard(){
     return (
         <>
-        <h1>dafdfghsdfgsshboard</h1>
+        <div className="flex ">
+
+        <StateCard/>
+        </div>
+       
         </>
     )
 }
