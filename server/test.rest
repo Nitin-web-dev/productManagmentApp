@@ -1,0 +1,103 @@
+### setup database 
+GET http://localhost:4000/api/setupdb
+
+
+### check auth api test
+GET http://localhost:4000/api/v1/auth/test
+
+
+
+
+### auth signup api
+POST http://localhost:4000/api/v1/auth/signup
+Content-Type: application/json
+
+{
+    "firstname":"sammy",
+    "lastname": "singh",
+    "email":"sammy@gmail.com",
+    "password":"password123",
+    "department":"development",
+    "role":"backend developer"
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+### check for health for server 
+GET http://localhost:4000/api/health
+
+
+
+
+
+### insert fake data into databse
+POST http://localhost:4000/api/insertData
+Content-Type: application/json
+
+{
+    "firstname":"sammy",
+    "lastname": "singh",
+    "email":"sammy@gmail.com",
+    "department":"development",
+    "role":"backend developer"
+}
+
+
+### fetch fake  data form databse
+GET http://localhost:4000/api/fetchData
