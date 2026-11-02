@@ -12,16 +12,26 @@ export default function Topbar() {
   };
 
   return (
-    <div className="mb-[18px] flex flex-wrap items-center gap-2.5">
-      <button
-        type="button"
-        className="min-w-[180px] max-w-[420px] flex-1 cursor-pointer rounded-lg border border-line bg-panel px-3 py-2 text-left text-mute"
-      >
-        Search everything
-      </button>
-      <button type="button" className={iconBtn}>AI assistant</button>
-      <button type="button" className={iconBtn}>Alerts</button>
-      <button type="button" className={iconBtn} onClick={handleLogout}>Log out</button>
+    <div>
+       {/* Top bar */}
+        <div className="flex items-center gap-3">
+          <input className="flex h-[41px] flex-1  items-center rounded-lg border border-[#1d2f2a] bg-[#101c19] px-3.5 text-sm text-[#8a9b96]"
+            placeholder="Search everything Ctrl K" 
+         />
+         
+          <button className="h-[41px] rounded-lg border border-[#1d2f2a] bg-[#101c19] px-3.5 text-sm font-medium">
+            AI assistant
+          </button>
+          <button className="relative h-[41px] rounded-lg border border-[#1d2f2a] bg-[#101c19] px-3.5 text-sm font-medium">
+            Alerts
+            <span className="absolute -right-2 -top-2 flex h-4 w-4 items-center justify-center rounded-full bg-[#fb923c] text-[10px] font-bold text-white">
+              3
+            </span>
+          </button>
+          <button className="h-[41px] rounded-lg border border-[#1d2f2a] bg-[#101c19] px-3.5 text-sm font-medium">
+            Log out
+          </button>
+        </div>
     </div>
   );
 }

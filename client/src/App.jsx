@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Login from "./pages/Auth";
 import Dashboard from "./pages/Dashboard";
+import Projects  from "./pages/Projects";
+import Backlog from "./pages/Backlog";
 import ProtectedRoute from "./utils/ProtectedRoute";
 //todo: lineno=13: protectedRoute not working correctly correct it 
 function App() {
@@ -16,9 +18,9 @@ function App() {
        {/* inside the layout: sidebar + topbar stay, page changes */}
         <Route element={<Layout />}>
           <Route path="/dashboard" element={<Dashboard  />} />
-          <Route path="/projects" element={<Placeholder title="Projects" />} />
+          <Route path="/projects" element={<Projects/>} />
           <Route path="/board" element={<Placeholder title="Sprint board" />} />
-          <Route path="/backlog" element={<Placeholder title="Backlog" />} />
+          <Route path="/backlog" element={<Backlog/>} />
           <Route path="/scrum" element={<Placeholder title="Scrum" />} />
           <Route path="/docs" element={<Placeholder title="Docs" />} />
           <Route path="/calendar" element={<Placeholder title="Calendar" />} />
